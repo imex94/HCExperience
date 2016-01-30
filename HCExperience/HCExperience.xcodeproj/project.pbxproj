@@ -14,7 +14,7 @@
 		2BD738FB1C5D3B880092F507 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BD738F91C5D3B880092F507 /* LaunchScreen.storyboard */; };
 		2BD739061C5D3B880092F507 /* HCExperienceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD739051C5D3B880092F507 /* HCExperienceUITests.swift */; };
 		2BD739131C5D3BA60092F507 /* HCELevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD739101C5D3BA60092F507 /* HCELevel.swift */; };
-		2BD739141C5D3BA60092F507 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD739111C5D3BA60092F507 /* Extensions.swift */; };
+		2BD739141C5D3BA60092F507 /* HCEExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD739111C5D3BA60092F507 /* HCEExtensions.swift */; };
 		2BD739151C5D3BA60092F507 /* HCEGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD739121C5D3BA60092F507 /* HCEGame.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +40,7 @@
 		2BD739051C5D3B880092F507 /* HCExperienceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCExperienceUITests.swift; sourceTree = "<group>"; };
 		2BD739071C5D3B880092F507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BD739101C5D3BA60092F507 /* HCELevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCELevel.swift; sourceTree = "<group>"; };
-		2BD739111C5D3BA60092F507 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2BD739111C5D3BA60092F507 /* HCEExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCEExtensions.swift; sourceTree = "<group>"; };
 		2BD739121C5D3BA60092F507 /* HCEGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCEGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -209,7 +209,7 @@
 				2BD739151C5D3BA60092F507 /* HCEGame.swift in Sources */,
 				2BD739131C5D3BA60092F507 /* HCELevel.swift in Sources */,
 				2BD738F11C5D3B880092F507 /* AppDelegate.swift in Sources */,
-				2BD739141C5D3BA60092F507 /* Extensions.swift in Sources */,
+				2BD739141C5D3BA60092F507 /* HCEExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +399,7 @@
 				2BD7390C1C5D3B880092F507 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BD7390D1C5D3B880092F507 /* Build configuration list for PBXNativeTarget "HCExperienceUITests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +408,7 @@
 				2BD7390F1C5D3B880092F507 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
