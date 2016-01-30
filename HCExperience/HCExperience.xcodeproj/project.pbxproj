@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2152A2EA1C5D2FAA00B62AC8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152A2E91C5D2FAA00B62AC8 /* Extensions.swift */; };
 		2BB98F681C5D1A6A005B79A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB98F671C5D1A6A005B79A8 /* AppDelegate.swift */; };
 		2BB98F6A1C5D1A6A005B79A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB98F691C5D1A6A005B79A8 /* ViewController.swift */; };
 		2BB98F6D1C5D1A6A005B79A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB98F6B1C5D1A6A005B79A8 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2152A2E91C5D2FAA00B62AC8 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2BB98F641C5D1A6A005B79A8 /* HCExperience.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCExperience.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB98F671C5D1A6A005B79A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BB98F691C5D1A6A005B79A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				2BB98F671C5D1A6A005B79A8 /* AppDelegate.swift */,
+				2152A2E91C5D2FAA00B62AC8 /* Extensions.swift */,
 				2BB98F691C5D1A6A005B79A8 /* ViewController.swift */,
 				2BB98F6B1C5D1A6A005B79A8 /* Main.storyboard */,
 				2BB98F6E1C5D1A6A005B79A8 /* Assets.xcassets */,
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BB98F6A1C5D1A6A005B79A8 /* ViewController.swift in Sources */,
+				2152A2EA1C5D2FAA00B62AC8 /* Extensions.swift in Sources */,
 				2BB98F681C5D1A6A005B79A8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +489,7 @@
 				2BB98F8E1C5D1A6B005B79A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BB98F8F1C5D1A6B005B79A8 /* Build configuration list for PBXNativeTarget "HCExperienceTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +498,7 @@
 				2BB98F911C5D1A6B005B79A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BB98F921C5D1A6B005B79A8 /* Build configuration list for PBXNativeTarget "HCExperienceUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +507,7 @@
 				2BB98F941C5D1A6B005B79A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
