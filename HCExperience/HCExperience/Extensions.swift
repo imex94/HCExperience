@@ -33,3 +33,24 @@ extension UIColor {
         return UIColor (red: CGFloat (r), green: CGFloat (g), blue: 0.0, alpha: 1)
     }
 }
+
+extension Int {
+    func saveWithKey(key: String) {
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        userDefaults.setInteger(self, forKey: key)
+    }
+}
+
+extension Float {
+    func saveWithKey(key: String) {
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        userDefaults.setFloat(self, forKey: key)
+    }
+}
+
+extension String {
+    func saveWithKey(key: String) {
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        userDefaults.setObject(self, forKey: key)
+    }
+}
