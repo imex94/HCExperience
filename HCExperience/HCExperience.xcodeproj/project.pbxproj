@@ -97,11 +97,9 @@
 		2BB98F661C5D1A6A005B79A8 /* HCExperience */ = {
 			isa = PBXGroup;
 			children = (
-				2BB98F671C5D1A6A005B79A8 /* AppDelegate.swift */,
-				2BB98F691C5D1A6A005B79A8 /* ViewController.swift */,
-				2BB98F6B1C5D1A6A005B79A8 /* Main.storyboard */,
-				2BB98F6E1C5D1A6A005B79A8 /* Assets.xcassets */,
-				2BB98F701C5D1A6A005B79A8 /* LaunchScreen.storyboard */,
+				2BB98F971C5D1E51005B79A8 /* Controller */,
+				2BB98F961C5D1E4C005B79A8 /* View */,
+				2BB98F951C5D1E46005B79A8 /* Model */,
 				2BB98F731C5D1A6A005B79A8 /* Info.plist */,
 			);
 			path = HCExperience;
@@ -123,6 +121,32 @@
 				2BB98F891C5D1A6B005B79A8 /* Info.plist */,
 			);
 			path = HCExperienceUITests;
+			sourceTree = "<group>";
+		};
+		2BB98F951C5D1E46005B79A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2BB98F961C5D1E4C005B79A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2BB98F6B1C5D1A6A005B79A8 /* Main.storyboard */,
+				2BB98F6E1C5D1A6A005B79A8 /* Assets.xcassets */,
+				2BB98F701C5D1A6A005B79A8 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2BB98F971C5D1E51005B79A8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2BB98F671C5D1A6A005B79A8 /* AppDelegate.swift */,
+				2BB98F691C5D1A6A005B79A8 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
