@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -20,7 +21,30 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hGL-ly-Xp0">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="joe_1" translatesAutoresizingMaskIntoConstraints="NO" id="o1X-rb-Nmo">
+                                        <rect key="frame" x="192" y="339" width="216" height="253"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="216" id="NPU-ie-T17"/>
+                                            <constraint firstAttribute="height" constant="253" id="YYd-4d-PO1"/>
+                                            <constraint firstAttribute="width" secondItem="o1X-rb-Nmo" secondAttribute="height" multiplier="216:253" id="uQW-O5-trf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifi_0" translatesAutoresizingMaskIntoConstraints="NO" id="SYa-xK-496">
+                                        <rect key="frame" x="260" y="259" width="81" height="81"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="81" id="GCv-XU-v9w"/>
+                                            <constraint firstAttribute="height" constant="81" id="dhp-oM-5Ox"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="SYa-xK-496" firstAttribute="centerX" secondItem="hGL-ly-Xp0" secondAttribute="centerX" id="3Ob-MK-rlt"/>
+                                    <constraint firstItem="o1X-rb-Nmo" firstAttribute="centerX" secondItem="hGL-ly-Xp0" secondAttribute="centerX" id="6Rf-ER-avp"/>
+                                    <constraint firstAttribute="bottom" secondItem="o1X-rb-Nmo" secondAttribute="bottom" constant="8" id="GXg-Rn-Xfg"/>
+                                    <constraint firstItem="SYa-xK-496" firstAttribute="centerY" secondItem="hGL-ly-Xp0" secondAttribute="centerY" id="vkO-Z9-0bj"/>
+                                </constraints>
                             </view>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="lOa-FW-dih">
                                 <rect key="frame" x="18" y="10" width="564" height="31"/>
@@ -42,6 +66,8 @@
                     </view>
                     <connections>
                         <outlet property="colorView" destination="hGL-ly-Xp0" id="Tag-4T-dwJ"/>
+                        <outlet property="joeImageView" destination="o1X-rb-Nmo" id="AOo-HC-D9E"/>
+                        <outlet property="wifiImageView" destination="SYa-xK-496" id="WLo-dG-PCF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -49,4 +75,8 @@
             <point key="canvasLocation" x="314" y="342"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="joe_1" width="548" height="634"/>
+        <image name="wifi_0" width="300" height="300"/>
+    </resources>
 </document>

@@ -34,6 +34,16 @@ extension UIColor {
     }
 }
 
+extension UIImageView {
+    func animatedImageFrom(images: [UIImage], withDuration duration: Double) -> UIImageView {
+        self.animationImages = images
+        self.animationDuration = duration
+        self.animationRepeatCount = 0
+        self.startAnimating()
+        return self
+    }
+}
+
 extension Int {
     func saveWithKey(key: String) {
         let userDefaults = NSUserDefaults.standardUserDefaults()
