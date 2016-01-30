@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,18 +18,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hGL-ly-Xp0">
-                                <rect key="frame" x="20" y="71" width="240" height="128"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hGL-ly-Xp0">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="lOa-FW-dih">
-                                <rect key="frame" x="18" y="10" width="244" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="lOa-FW-dih">
+                                <rect key="frame" x="18" y="10" width="564" height="31"/>
                                 <connections>
                                     <action selector="slider:" destination="BYZ-38-t0r" eventType="valueChanged" id="Aou-1Z-shM"/>
                                 </connections>
                             </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hGL-ly-Xp0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="DWO-BT-0aS"/>
+                            <constraint firstItem="lOa-FW-dih" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QTu-Pa-Deq"/>
+                            <constraint firstItem="hGL-ly-Xp0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Wcr-yK-PWD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hGL-ly-Xp0" secondAttribute="trailing" constant="-20" id="ZaB-Yv-ArA"/>
+                            <constraint firstItem="lOa-FW-dih" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="10" id="cOY-ED-O9f"/>
+                            <constraint firstItem="lOa-FW-dih" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ca8-oc-fgT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hGL-ly-Xp0" secondAttribute="bottom" id="gA8-9t-So0"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="colorView" destination="hGL-ly-Xp0" id="Tag-4T-dwJ"/>
