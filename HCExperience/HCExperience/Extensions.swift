@@ -12,19 +12,20 @@ import UIKit
 extension UIColor {
     class func getRageBarColor(value : Float) -> UIColor {
         var r, g : Float
+        let treshold : Float = 10.0
         
-        if (value <= 20.0) {
+        if (value <= treshold) {
             r = 0.0
             g = 1.0
         } else if (value < 50.0) {
-            r = (value - 20.0) / 30.0
+            r = (value - treshold) / (50.0 - treshold)
             g = 1.0
         } else if (value == 50.0) {
             r = 1.0
             g = 1.0
-        } else if (value < 80.0) {
+        } else if (value < 100 - treshold) {
             r = 1.0
-            g = 1.0 - ((value - 50.0) / 30.0)
+            g = 1.0 - ((value - 50.0) / (50.0 - treshold))
         } else {
             r = 1.0
             g = 0.0
