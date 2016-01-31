@@ -87,6 +87,7 @@ class HCEGameViewController: UIViewController {
     func loadingScreenTimerUpdate() {
         isGameRunning = true
         
+        loadingTimer?.invalidate()
         loadingView.stopLoading()
         loadingView.removeFromSuperview()
         
@@ -109,6 +110,7 @@ class HCEGameViewController: UIViewController {
         let wifiImages = [UIImage(named: "wifi_0")!, UIImage(named: "wifi_1")!, UIImage(named: "wifi_2")!, UIImage(named: "wifi_3")!]
         wifiImageView.animatedImageFrom(wifiImages, withDuration: 2.5)
         
+        gameTimer?.invalidate()
         loadingTimer = NSTimer.scheduledTimerWithTimeInterval(1.3 + (Double(level.levelNumber - 1) * 0.132), target: self, selector: "loadingScreenTimerUpdate", userInfo: nil, repeats: false)
     }
     
