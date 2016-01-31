@@ -10,14 +10,9 @@ import Foundation
 import UIKit
 
 class HCEImageArranger {
-    var count : Int;
-    var rectangles = [CGRect]()
-    
-    init(count: Int) {
-        self.count = count;
-    }
-    
-    func createRectangles() -> [CGRect] {
+    class func createRectangles(count: Int) -> [CGRect] {
+        var rectangles = [CGRect]()
+        
         var randomX : CGFloat
         var randomY : CGFloat
         var newRectangle : CGRect
@@ -47,9 +42,5 @@ class HCEImageArranger {
         }
         
         return rectangles;
-    }
-    
-    func getCount() -> Int {
-        return count
     }
 }

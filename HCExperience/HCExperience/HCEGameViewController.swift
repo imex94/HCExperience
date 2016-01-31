@@ -14,7 +14,6 @@ class HCEGameViewController: UIViewController {
     @IBOutlet var rageView: HCERageBar!
     
     private var currentRageView: HCERageBar!
-    private var imageArranger: HCEImageArranger!
     var level = HCELevel(difficulty: .Easy)
     
     override func viewDidLoad() {
@@ -40,8 +39,7 @@ class HCEGameViewController: UIViewController {
     }
     
     func loadGame() {
-        imageArranger = HCEImageArranger(count: level.elements)
-        let rects = imageArranger.createRectangles()
+        let rects = HCEImageArranger.createRectangles(level.elements)
         
         for i in 0..<level.elements {
             
