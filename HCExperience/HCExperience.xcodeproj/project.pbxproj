@@ -11,6 +11,7 @@
 		1164FD441C5DAEF000822784 /* HCELevelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1164FD431C5DAEF000822784 /* HCELevelsViewController.swift */; };
 		21B7A7281C5D5B5E00A88680 /* HCEImageArrange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B7A7271C5D5B5E00A88680 /* HCEImageArrange.swift */; };
 		21B7A72D1C5D896100A88680 /* HCETemplates.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21B7A72B1C5D896100A88680 /* HCETemplates.xib */; };
+		2B121D371C5DDCF700F44E4F /* HCEElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B121D361C5DDCF700F44E4F /* HCEElement.swift */; };
 		2BD738F11C5D3B880092F507 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD738F01C5D3B880092F507 /* AppDelegate.swift */; };
 		2BD738F61C5D3B880092F507 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BD738F41C5D3B880092F507 /* Main.storyboard */; };
 		2BD738F81C5D3B880092F507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD738F71C5D3B880092F507 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		1164FD431C5DAEF000822784 /* HCELevelsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCELevelsViewController.swift; sourceTree = "<group>"; };
 		21B7A7271C5D5B5E00A88680 /* HCEImageArrange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCEImageArrange.swift; sourceTree = "<group>"; };
 		21B7A72C1C5D896100A88680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HCETemplates.xib; sourceTree = "<group>"; };
+		2B121D361C5DDCF700F44E4F /* HCEElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCEElement.swift; sourceTree = "<group>"; };
 		2BD738ED1C5D3B880092F507 /* HCExperience.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCExperience.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD738F01C5D3B880092F507 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BD738F51C5D3B880092F507 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				2BD739121C5D3BA60092F507 /* HCEGame.swift */,
 				2BD739111C5D3BA60092F507 /* HCEExtensions.swift */,
 				2BD7391C1C5DB31E0092F507 /* HCEAudioPlayer.swift */,
+				2B121D361C5DDCF700F44E4F /* HCEElement.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B121D371C5DDCF700F44E4F /* HCEElement.swift in Sources */,
 				2BD7391B1C5D70420092F507 /* HCERageBar.swift in Sources */,
 				2BD739151C5D3BA60092F507 /* HCEGame.swift in Sources */,
 				1164FD421C5DA5BD00822784 /* HCEFirstViewController.swift in Sources */,

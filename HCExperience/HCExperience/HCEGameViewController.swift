@@ -14,16 +14,16 @@ class HCEGameViewController: UIViewController {
     @IBOutlet var rageView: HCERageBar!
     
     private var currentRageView: HCERageBar!
-    var level = HCELevel(difficulty: .Easy)
+    private var timer: NSTimer?
+    var level = HCELevel(elements: 2)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        level.elements = 3
-        level.rage = 5
         
         loadTopBar()
         loadGame()
+        
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "updateTimer", userInfo: nil, repeats: true)
     }
     
     func loadTopBar() {
@@ -43,10 +43,25 @@ class HCEGameViewController: UIViewController {
         
         for i in 0..<level.elements {
             
-            let button = UIButton(frame: rects[i])
+            let button = HCEElement(frame: rects[i])
             button.tag = i
-            button.backgroundColor = UIColor.getRageBarColor(Float((i * 20) + 1))
+            if i == 0 {
+                button.setType(Int(arc4random_uniform(3)))
+            } else {
+                button.setType(Int(arc4random_uniform(6) + 3))
+            }
             view.addSubview(button)
+        }
+    }
+    
+    func updateTimer() {
+        if (level.rage >= 100) {
+            timer?.invalidate()
+            print("Game Over")
+        } else {
+            level.rage += 0.5
+            currentRageView.fillColor = UIColor.getRageBarColor(Float(level.rage))
+            currentRageView.updateProgress(CGFloat(level.rage))
         }
     }
 

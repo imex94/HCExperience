@@ -13,7 +13,7 @@ class HCELevelsViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet var tableView: UITableView!
     @IBOutlet var viewRules: UIView!
     
-    let kStatusOfLevels = [true, false, false, false, false]
+    let game = HCEGame.sharedGame
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,8 +43,11 @@ class HCELevelsViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.textLabel?.text = "File \(indexPath.row + 1)"
         
         let button = cell.viewWithTag(1989) as! UIButton
-        if kStatusOfLevels[indexPath.row] == false {
+        button.tag = (indexPath.row + 1)
+        button.addTarget(self, action: "startLevel:", forControlEvents: .TouchUpInside)
+        if (game.currentLevel - 1) < indexPath.row {
             button.setImage(UIImage(named: "padlockicon"), forState: .Normal)
+            button.enabled = false
         }
         cell.contentView.bringSubviewToFront(button)
 
@@ -63,15 +66,20 @@ class HCELevelsViewController: UIViewController, UITableViewDelegate, UITableVie
         tableView.cellForRowAtIndexPath(indexPath)?.selected = false
     }
     
-
-    /*
+    // MARK: - Start Level
+    
+    func startLevel(sender: UIButton) {
+        performSegueWithIdentifier("startLevel", sender: sender)
+    }
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        let gameViewController = segue.destinationViewController as! HCEGameViewController
+        let level = HCELevel(elements: (sender as! UIButton).tag + 1)
+        gameViewController.level = level
     }
-    */
-
 }

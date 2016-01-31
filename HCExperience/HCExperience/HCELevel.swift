@@ -8,22 +8,14 @@
 
 import UIKit
 
-enum HCELevelDifficulty {
-    case Easy
-    case Medium
-    case Hard
-}
-
 class HCELevel: NSObject {
     
-    var rage: Int
+    var rage: Double
     var elements: Int
-    var difficulty: HCELevelDifficulty
     
-    init(difficulty: HCELevelDifficulty) {
-        self.rage = 0
-        self.elements = 0
-        self.difficulty = difficulty
+    init(elements: Int) {
+        self.rage = 0.0
+        self.elements = elements
         super.init()
     }
 }
