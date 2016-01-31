@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -331,6 +332,7 @@
                         <viewControllerLayoutGuide type="bottom" id="xhz-th-XPh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="duR-OZ-HMb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select file to download:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aw5-cw-3n2">
@@ -376,6 +378,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fuq-tj-lJj" id="EaA-IV-Kqb">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" tag="1989" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Una-La-QdJ">
@@ -475,6 +478,7 @@
                                 <exclude reference="cKH-Z8-t4e"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="Qzh-m4-jUh"/>
                                 <exclude reference="ALz-1B-hdB"/>
                                 <exclude reference="Qtu-cV-0ra"/>
                                 <exclude reference="orz-f9-691"/>
@@ -487,7 +491,6 @@
                                 <exclude reference="Yso-4H-BfD"/>
                                 <exclude reference="Zfd-yF-qin"/>
                                 <exclude reference="bF4-3J-4e6"/>
-                                <exclude reference="Qzh-m4-jUh"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -498,6 +501,7 @@
                                 <include reference="cKH-Z8-t4e"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="Qzh-m4-jUh"/>
                                 <include reference="ALz-1B-hdB"/>
                                 <include reference="Qtu-cV-0ra"/>
                                 <include reference="orz-f9-691"/>
@@ -510,7 +514,6 @@
                                 <include reference="Yso-4H-BfD"/>
                                 <include reference="Zfd-yF-qin"/>
                                 <include reference="bF4-3J-4e6"/>
-                                <include reference="Qzh-m4-jUh"/>
                             </mask>
                         </variation>
                     </view>
