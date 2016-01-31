@@ -9,80 +9,6 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HCExperience" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hGL-ly-Xp0">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="joe_1" translatesAutoresizingMaskIntoConstraints="NO" id="o1X-rb-Nmo">
-                                        <rect key="frame" x="192" y="339" width="216" height="253"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="216" id="NPU-ie-T17"/>
-                                            <constraint firstAttribute="height" constant="253" id="YYd-4d-PO1"/>
-                                            <constraint firstAttribute="width" secondItem="o1X-rb-Nmo" secondAttribute="height" multiplier="216:253" id="uQW-O5-trf"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifi_0" translatesAutoresizingMaskIntoConstraints="NO" id="SYa-xK-496">
-                                        <rect key="frame" x="260" y="259" width="81" height="81"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="81" id="GCv-XU-v9w"/>
-                                            <constraint firstAttribute="height" constant="81" id="dhp-oM-5Ox"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Smm-iq-1Vf">
-                                        <rect key="frame" x="92" y="76" width="417" height="175"/>
-                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="SYa-xK-496" firstAttribute="centerX" secondItem="hGL-ly-Xp0" secondAttribute="centerX" id="3Ob-MK-rlt"/>
-                                    <constraint firstItem="o1X-rb-Nmo" firstAttribute="centerX" secondItem="hGL-ly-Xp0" secondAttribute="centerX" id="6Rf-ER-avp"/>
-                                    <constraint firstAttribute="bottom" secondItem="o1X-rb-Nmo" secondAttribute="bottom" constant="8" id="GXg-Rn-Xfg"/>
-                                    <constraint firstItem="SYa-xK-496" firstAttribute="centerY" secondItem="hGL-ly-Xp0" secondAttribute="centerY" id="vkO-Z9-0bj"/>
-                                </constraints>
-                            </view>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="lOa-FW-dih">
-                                <rect key="frame" x="18" y="10" width="564" height="31"/>
-                                <connections>
-                                    <action selector="slider:" destination="BYZ-38-t0r" eventType="valueChanged" id="Aou-1Z-shM"/>
-                                </connections>
-                            </slider>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="hGL-ly-Xp0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="DWO-BT-0aS"/>
-                            <constraint firstItem="lOa-FW-dih" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QTu-Pa-Deq"/>
-                            <constraint firstItem="hGL-ly-Xp0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Wcr-yK-PWD"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="hGL-ly-Xp0" secondAttribute="trailing" constant="-20" id="ZaB-Yv-ArA"/>
-                            <constraint firstItem="lOa-FW-dih" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="10" id="cOY-ED-O9f"/>
-                            <constraint firstItem="lOa-FW-dih" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ca8-oc-fgT"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hGL-ly-Xp0" secondAttribute="bottom" id="gA8-9t-So0"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="colorView" destination="hGL-ly-Xp0" id="Tag-4T-dwJ"/>
-                        <outlet property="joeImageView" destination="o1X-rb-Nmo" id="AOo-HC-D9E"/>
-                        <outlet property="myTypeWriter" destination="Smm-iq-1Vf" id="82P-RA-Obf"/>
-                        <outlet property="wifiImageView" destination="SYa-xK-496" id="WLo-dG-PCF"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="314" y="342"/>
-        </scene>
         <!--First View Controller-->
         <scene sceneID="s3c-jb-AmY">
             <objects>
@@ -576,7 +502,6 @@
         <image name="Apple_Thunderbolt_Display" width="223" height="170"/>
         <image name="downloadbutton" width="42" height="42"/>
         <image name="flyingwifi" width="143" height="90"/>
-        <image name="joe_1" width="548" height="634"/>
         <image name="joe_3" width="548" height="634"/>
         <image name="logo" width="265" height="194"/>
         <image name="safari" width="540" height="43"/>
