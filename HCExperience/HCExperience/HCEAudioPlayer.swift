@@ -9,12 +9,18 @@
 import UIKit
 import AVFoundation
 
+enum HCEAudioPlayerState {
+    case Playing
+    case Stopped
+}
+
 class HCEAudioPlayer: NSObject {
-    
+    private var state: HCEAudioPlayerState
     private var audioPlayer: AVAudioPlayer!
     private var filename = ""
     
     init(filename: String) {
+        self.state = .Stopped
         self.filename = filename
     }
     
@@ -25,6 +31,7 @@ class HCEAudioPlayer: NSObject {
             try audioPlayer = AVAudioPlayer(contentsOfURL: url)
             audioPlayer.numberOfLoops = -1
             audioPlayer.play()
+            state = .Playing
         } catch {
             print("audio error")
         }
@@ -32,5 +39,10 @@ class HCEAudioPlayer: NSObject {
     
     func stopAudio() {
         audioPlayer.stop()
+        state = .Stopped
+    }
+    
+    func getState() -> HCEAudioPlayerState {
+        return state
     }
 }

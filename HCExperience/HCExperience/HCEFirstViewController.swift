@@ -77,6 +77,17 @@ class HCEFirstViewController: UIViewController {
             self.startButton.alpha = 1.0
         }
     }
+    
+    @IBAction func toggleMusic(sender: UIButton) {
+        switch audioPlayer.getState() {
+        case HCEAudioPlayerState.Stopped:
+            audioPlayer.playAudio()
+            sender.setImage(UIImage(named: "music_unmute"), forState: .Normal)
+        case HCEAudioPlayerState.Playing:
+            audioPlayer.stopAudio()
+            sender.setImage(UIImage(named: "music_mute"), forState: .Normal)
+        }
+    }
 
     /*
     // MARK: - Navigation
