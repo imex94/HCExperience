@@ -14,22 +14,42 @@ class HCEGameViewController: UIViewController {
     @IBOutlet var rageView: HCERageBar!
     
     private var currentRageView: HCERageBar!
+    private var imageArranger: HCEImageArranger!
     var level = HCELevel(difficulty: .Easy)
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        level.elements = 3
+        level.rage = 5
+        
+        loadTopBar()
+        loadGame()
+    }
+    
+    func loadTopBar() {
         // Start Wifi animation
         let wifiImages = [UIImage(named: "wifi_0")!, UIImage(named: "wifi_1")!, UIImage(named: "wifi_2")!, UIImage(named: "wifi_3")!]
         wifiImageView.animatedImageFrom(wifiImages, withDuration: 2.5)
-        
-        level.rage = 50
         
         let width = view.frame.width - rageView.frame.origin.x - 10
         currentRageView = HCERageBar(frame: CGRectMake(rageView.frame.origin.x, rageView.frame.origin.y, width, rageView.frame.height))
         currentRageView.fillColor = UIColor.getRageBarColor(Float(level.rage))
         currentRageView.updateProgress(CGFloat(level.rage))
         view.addSubview(currentRageView)
+    }
+    
+    func loadGame() {
+        imageArranger = HCEImageArranger(count: level.elements)
+        let rects = imageArranger.createRectangles()
+        
+        for i in 0..<level.elements {
+            
+            let button = UIButton(frame: rects[i])
+            button.tag = i
+            button.backgroundColor = UIColor.getRageBarColor(Float((i * 20) + 1))
+            view.addSubview(button)
+        }
     }
 
     override func didReceiveMemoryWarning() {
