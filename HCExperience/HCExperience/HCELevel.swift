@@ -16,12 +16,12 @@ enum HCELevelDifficulty {
 
 class HCELevel: NSObject {
     
-    var range: Int
+    var rage: Int
     var progressStatus: Int
     var difficulty: HCELevelDifficulty
     
     init(difficulty: HCELevelDifficulty) {
-        self.range = 0
+        self.rage = 0
         self.progressStatus = 0
         self.difficulty = difficulty
         super.init()
