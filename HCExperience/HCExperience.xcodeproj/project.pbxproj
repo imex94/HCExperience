@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		112E01AD1C5D6F0200E41BB1 /* HCTemplates.xib in Resources */ = {isa = PBXBuildFile; fileRef = 112E01AB1C5D6F0200E41BB1 /* HCTemplates.xib */; };
 		2BD738F11C5D3B880092F507 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD738F01C5D3B880092F507 /* AppDelegate.swift */; };
 		2BD738F31C5D3B880092F507 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD738F21C5D3B880092F507 /* ViewController.swift */; };
 		2BD738F61C5D3B880092F507 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BD738F41C5D3B880092F507 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		112E01AC1C5D6F0200E41BB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HCTemplates.xib; sourceTree = "<group>"; };
 		2BD738ED1C5D3B880092F507 /* HCExperience.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCExperience.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD738F01C5D3B880092F507 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BD738F21C5D3B880092F507 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				2BD738F01C5D3B880092F507 /* AppDelegate.swift */,
 				2BD738F21C5D3B880092F507 /* ViewController.swift */,
 				2BD738F41C5D3B880092F507 /* Main.storyboard */,
+				112E01AB1C5D6F0200E41BB1 /* HCTemplates.xib */,
 				2BD738F71C5D3B880092F507 /* Assets.xcassets */,
 				2BD738F91C5D3B880092F507 /* LaunchScreen.storyboard */,
 				2BD738FC1C5D3B880092F507 /* Info.plist */,
@@ -185,6 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				112E01AD1C5D6F0200E41BB1 /* HCTemplates.xib in Resources */,
 				2BD738FB1C5D3B880092F507 /* LaunchScreen.storyboard in Resources */,
 				2BD738F81C5D3B880092F507 /* Assets.xcassets in Resources */,
 				2BD738F61C5D3B880092F507 /* Main.storyboard in Resources */,
@@ -232,6 +236,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		112E01AB1C5D6F0200E41BB1 /* HCTemplates.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				112E01AC1C5D6F0200E41BB1 /* Base */,
+			);
+			name = HCTemplates.xib;
+			sourceTree = "<group>";
+		};
 		2BD738F41C5D3B880092F507 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
