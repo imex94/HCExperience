@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "emoji_smileyface.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "emoji_smileyface.png",
       "scale" : "2x"
     },
     {

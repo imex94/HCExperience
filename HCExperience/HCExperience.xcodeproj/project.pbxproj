@@ -86,10 +86,10 @@
 			isa = PBXGroup;
 			children = (
 				2BD739101C5D3BA60092F507 /* HCELevel.swift */,
+				2BD739121C5D3BA60092F507 /* HCEGame.swift */,
 				2BD739111C5D3BA60092F507 /* HCEExtensions.swift */,
 				21B7A7271C5D5B5E00A88680 /* HCEImageArrange.swift */,
 				2BD739121C5D3BA60092F507 /* HCEGame.swift */,
-				2BD739111C5D3BA60092F507 /* HCEExtensions.swift */,
 				2BD738F01C5D3B880092F507 /* AppDelegate.swift */,
 				2BD738F21C5D3B880092F507 /* ViewController.swift */,
 				2BD738F41C5D3B880092F507 /* Main.storyboard */,

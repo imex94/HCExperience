@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "emoji_taytay.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "emoji_taytay.png",
       "scale" : "2x"
     },
     {
