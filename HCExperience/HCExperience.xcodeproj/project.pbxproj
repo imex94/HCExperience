@@ -93,6 +93,9 @@
 			children = (
 				2BD739101C5D3BA60092F507 /* HCELevel.swift */,
 				2BD739111C5D3BA60092F507 /* HCEExtensions.swift */,
+				21B7A7271C5D5B5E00A88680 /* HCEImageArrange.swift */,
+				2BD739121C5D3BA60092F507 /* HCEGame.swift */,
+				2BD739111C5D3BA60092F507 /* HCEExtensions.swift */,
 				2BD7391A1C5D70420092F507 /* HCERageBar.swift */,
 				2BD738F01C5D3B880092F507 /* AppDelegate.swift */,
 				2BD738F21C5D3B880092F507 /* ViewController.swift */,
@@ -221,6 +224,7 @@
 				2BD739151C5D3BA60092F507 /* HCEGame.swift in Sources */,
 				2BD739131C5D3BA60092F507 /* HCELevel.swift in Sources */,
 				2BD739191C5D6E890092F507 /* HCEGameViewController.swift in Sources */,
+				21B7A7281C5D5B5E00A88680 /* HCEImageArrange.swift in Sources */,
 				2BD738F11C5D3B880092F507 /* AppDelegate.swift in Sources */,
 				2BD739141C5D3BA60092F507 /* HCEExtensions.swift in Sources */,
 			);
