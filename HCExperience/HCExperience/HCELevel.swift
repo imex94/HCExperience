@@ -10,6 +10,7 @@ import UIKit
 
 class HCELevel: NSObject {
     
+    var levelNumber: Int
     var rage: Double
     var elements: Int
     var currentDownloads: Int
@@ -17,6 +18,7 @@ class HCELevel: NSObject {
     init(elements: Int) {
         self.rage = 0.0
         self.currentDownloads = 0
+        self.levelNumber = 1
         self.elements = elements
         super.init()
     }
