@@ -19,6 +19,7 @@ class HCEGameViewController: UIViewController {
     private var rageTimer: NSTimer?
     private var loadingTimer: NSTimer?
     private var gameTimer: NSTimer?
+    private var isGameRunning = true
     
     var level = HCELevel(elements: 2)
     
@@ -84,6 +85,8 @@ class HCEGameViewController: UIViewController {
     }
     
     func loadingScreenTimerUpdate() {
+        isGameRunning = true
+        
         loadingView.stopLoading()
         loadingView.removeFromSuperview()
         
@@ -91,6 +94,8 @@ class HCEGameViewController: UIViewController {
     }
     
     func gameScreenTimerUpdate() {
+        
+        isGameRunning = false
         
         for i in 0..<level.elements {
             view.viewWithTag(i + 10)?.removeFromSuperview()
@@ -114,7 +119,7 @@ class HCEGameViewController: UIViewController {
         case .Spam: level.rage += 5
         }
         
-        if gameTimer!.valid {
+        if isGameRunning {
             gameTimer?.invalidate()
             gameScreenTimerUpdate()
         }
