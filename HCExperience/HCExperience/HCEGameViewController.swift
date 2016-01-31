@@ -23,7 +23,7 @@ class HCEGameViewController: UIViewController {
         let wifiImages = [UIImage(named: "wifi_0")!, UIImage(named: "wifi_1")!, UIImage(named: "wifi_2")!, UIImage(named: "wifi_3")!]
         wifiImageView.animatedImageFrom(wifiImages, withDuration: 2.5)
         
-        level.rage = 50
+        level.rage = 74
         
         let width = view.frame.width - rageView.frame.origin.x - 10
         currentRageView = HCERageBar(frame: CGRectMake(rageView.frame.origin.x, rageView.frame.origin.y, width, rageView.frame.height))
