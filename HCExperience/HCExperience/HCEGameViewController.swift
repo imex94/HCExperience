@@ -10,8 +10,9 @@ import UIKit
 
 class HCEGameViewController: UIViewController {
 
-    @IBOutlet var wifiImageView: UIImageView!
-    @IBOutlet var rageView: HCERageBar!
+    @IBOutlet weak var wifiImageView: UIImageView!
+    @IBOutlet weak var rageView: HCERageBar!
+    @IBOutlet weak var downloadLabel: UILabel!
     
     private var currentRageView: HCERageBar!
     private var timer: NSTimer?
@@ -22,6 +23,7 @@ class HCEGameViewController: UIViewController {
         
         loadTopBar()
         loadGame()
+        loadBottom()
         
         timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "updateTimer", userInfo: nil, repeats: true)
     }
@@ -55,6 +57,10 @@ class HCEGameViewController: UIViewController {
         }
     }
     
+    func loadBottom() {
+        downloadLabel.text = "\(level.currentDownloads) / \(level.elements) downloaded"
+    }
+    
     func updateTimer() {
         if (level.rage >= 100) {
             timer?.invalidate()
@@ -68,13 +74,22 @@ class HCEGameViewController: UIViewController {
     
     func elementTapped(sender: HCEElement) {
         switch sender.type! {
-        case .Good: level.rage -= 10
+        case .Good: level.rage -= 10; level.currentDownloads++
         case .Bad: level.rage += 10
         case .Spam: level.rage += 5
         }
         
+        downloadLabel.text = "\(level.currentDownloads) / \(level.elements) downloaded"
+        
         if (level.rage <= 0) {
             level.rage = 0
+        } else if (level.rage >= 100) {
+            level.rage = 100
+            // TODO: Game Over
+            print("Game Over")
+        } else if (level.currentDownloads == level.elements) {
+            // TODO: Win
+            print("Win")
         }
         
         currentRageView.fillColor = UIColor.getRageBarColor(Float(level.rage))

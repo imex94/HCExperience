@@ -319,7 +319,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fuq-tj-lJj" id="EaA-IV-Kqb">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" tag="1989" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Una-La-QdJ">
@@ -562,6 +562,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="downloadLabel" destination="w2n-0m-HZg" id="ggz-h5-EQS"/>
                         <outlet property="rageView" destination="mqB-gw-CF4" id="YLL-aU-EiW"/>
                         <outlet property="wifiImageView" destination="PbV-kK-NHF" id="e6l-uH-98F"/>
                     </connections>
