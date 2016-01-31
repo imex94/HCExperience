@@ -585,12 +585,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Successfully downloaded file" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTK-Fn-6Pw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Successfully downloaded file" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTK-Fn-6Pw">
                                 <rect key="frame" x="149" y="52" width="226" height="26"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="140" id="Gl1-lE-Zxz"/>
+                                    <constraint firstAttribute="height" constant="140" id="Gl1-lE-Zxz">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="154"/>
+                                    </constraint>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="38"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="36"/>
                                 <color key="textColor" red="0.23921568627450981" green="0.52156862745098043" blue="0.050980392156862744" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
@@ -634,7 +636,9 @@
                             <constraint firstItem="UTK-Fn-6Pw" firstAttribute="centerX" secondItem="HyE-RU-Nth" secondAttribute="centerX" id="avJ-wY-e2y"/>
                             <constraint firstAttribute="bottom" secondItem="HyE-RU-Nth" secondAttribute="bottom" constant="20" symbolic="YES" id="bZG-Pl-lIt"/>
                             <constraint firstItem="UTK-Fn-6Pw" firstAttribute="leading" secondItem="cks-dv-ddu" secondAttribute="leading" id="i02-iq-21v"/>
-                            <constraint firstItem="UTK-Fn-6Pw" firstAttribute="top" secondItem="fGG-ag-5h0" secondAttribute="bottom" constant="109" id="q76-TB-Z9h"/>
+                            <constraint firstItem="UTK-Fn-6Pw" firstAttribute="top" secondItem="fGG-ag-5h0" secondAttribute="bottom" constant="109" id="q76-TB-Z9h">
+                                <variation key="heightClass=regular-widthClass=compact" constant="95"/>
+                            </constraint>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -794,7 +798,7 @@
         <image name="wifi_0" width="300" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gSQ-0s-5Wa"/>
+        <segue reference="Pmp-Xk-jM1"/>
         <segue reference="cbF-gn-nS9"/>
     </inferredMetricsTieBreakers>
 </document>
