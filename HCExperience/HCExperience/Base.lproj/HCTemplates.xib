@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -174,14 +174,14 @@
         </view>
     </objects>
     <resources>
-        <image name="emoji_angryface" width="114" height="126"/>
-        <image name="emoji_evilface" width="113" height="119"/>
-        <image name="emoji_imac" width="309" height="307"/>
-        <image name="emoji_shit" width="112" height="129"/>
-        <image name="emoji_smileyface" width="346" height="336"/>
-        <image name="emoji_taytay" width="309" height="309"/>
-        <image name="emoji_tick" width="353" height="347"/>
-        <image name="emoji_unicorn" width="323" height="323"/>
-        <image name="emoji_upsidedown" width="117" height="115"/>
+        <image name="emoji_angryface" width="171" height="189"/>
+        <image name="emoji_evilface" width="170" height="178"/>
+        <image name="emoji_imac" width="154" height="153"/>
+        <image name="emoji_shit" width="169" height="194"/>
+        <image name="emoji_smileyface" width="173" height="168"/>
+        <image name="emoji_taytay" width="154" height="154"/>
+        <image name="emoji_tick" width="176" height="173"/>
+        <image name="emoji_unicorn" width="161" height="161"/>
+        <image name="emoji_upsidedown" width="176" height="173"/>
     </resources>
 </document>
