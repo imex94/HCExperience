@@ -13,6 +13,8 @@
 		21B7A72D1C5D896100A88680 /* HCETemplates.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21B7A72B1C5D896100A88680 /* HCETemplates.xib */; };
 		2B121D371C5DDCF700F44E4F /* HCEElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B121D361C5DDCF700F44E4F /* HCEElement.swift */; };
 		2B121D391C5DEAD800F44E4F /* HCELoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B121D381C5DEAD800F44E4F /* HCELoadingView.swift */; };
+		2BB06B921C5E070300B2A532 /* HCEGameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB06B911C5E070300B2A532 /* HCEGameOverViewController.swift */; };
+		2BB06B941C5E0D7C00B2A532 /* game.aif in Resources */ = {isa = PBXBuildFile; fileRef = 2BB06B931C5E0D7400B2A532 /* game.aif */; };
 		2BD738F11C5D3B880092F507 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD738F01C5D3B880092F507 /* AppDelegate.swift */; };
 		2BD738F61C5D3B880092F507 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BD738F41C5D3B880092F507 /* Main.storyboard */; };
 		2BD738F81C5D3B880092F507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD738F71C5D3B880092F507 /* Assets.xcassets */; };
@@ -44,6 +46,8 @@
 		21B7A72C1C5D896100A88680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HCETemplates.xib; sourceTree = "<group>"; };
 		2B121D361C5DDCF700F44E4F /* HCEElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCEElement.swift; sourceTree = "<group>"; };
 		2B121D381C5DEAD800F44E4F /* HCELoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCELoadingView.swift; sourceTree = "<group>"; };
+		2BB06B911C5E070300B2A532 /* HCEGameOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCEGameOverViewController.swift; sourceTree = "<group>"; };
+		2BB06B931C5E0D7400B2A532 /* game.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = game.aif; sourceTree = "<group>"; };
 		2BD738ED1C5D3B880092F507 /* HCExperience.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCExperience.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD738F01C5D3B880092F507 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BD738F51C5D3B880092F507 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 				1164FD411C5DA5BD00822784 /* HCEFirstViewController.swift */,
 				1164FD431C5DAEF000822784 /* HCELevelsViewController.swift */,
 				2BD739181C5D6E890092F507 /* HCEGameViewController.swift */,
+				2BB06B911C5E070300B2A532 /* HCEGameOverViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 				21B7A72B1C5D896100A88680 /* HCETemplates.xib */,
 				2BD738F71C5D3B880092F507 /* Assets.xcassets */,
 				2BD738FC1C5D3B880092F507 /* Info.plist */,
+				2BB06B931C5E0D7400B2A532 /* game.aif */,
 				2BD7391F1C5DB7660092F507 /* main2.aif */,
 			);
 			path = HCExperience;
@@ -237,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BD739221C5DB8BB0092F507 /* main2.aif in Resources */,
+				2BB06B941C5E0D7C00B2A532 /* game.aif in Resources */,
 				2BD738FB1C5D3B880092F507 /* LaunchScreen.storyboard in Resources */,
 				2BD738F81C5D3B880092F507 /* Assets.xcassets in Resources */,
 				21B7A72D1C5D896100A88680 /* HCETemplates.xib in Resources */,
@@ -268,6 +275,7 @@
 				2BD739191C5D6E890092F507 /* HCEGameViewController.swift in Sources */,
 				21B7A7281C5D5B5E00A88680 /* HCEImageArrange.swift in Sources */,
 				2BD738F11C5D3B880092F507 /* AppDelegate.swift in Sources */,
+				2BB06B921C5E070300B2A532 /* HCEGameOverViewController.swift in Sources */,
 				1164FD441C5DAEF000822784 /* HCELevelsViewController.swift in Sources */,
 				2BD739141C5D3BA60092F507 /* HCEExtensions.swift in Sources */,
 			);

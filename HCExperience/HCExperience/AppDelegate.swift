@@ -16,6 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let userDefault = NSUserDefaults.standardUserDefaults()
+        let level = userDefault.integerForKey("currentLevel")
+        if level != 0 {
+            HCEGame.sharedGame.currentLevel = level
+        }
+        
         return true
     }
 

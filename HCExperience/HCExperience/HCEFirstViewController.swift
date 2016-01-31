@@ -45,6 +45,16 @@ class HCEFirstViewController: UIViewController {
         textView.layoutIfNeeded()
     }
     
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        audioPlayer.stopAudio()
+        
+        // start music
+        audioPlayer = HCEAudioPlayer(filename: "game")
+        audioPlayer.playAudio()
+    }
+    
     override func prefersStatusBarHidden() -> Bool {
         return true
     }

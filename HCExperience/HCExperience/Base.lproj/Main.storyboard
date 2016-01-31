@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LqI-wV-DNU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LqI-wV-DNU">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -481,7 +481,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view tag="1" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mqB-gw-CF4" customClass="HCERageBar" customModule="HCExperience" customModuleProvider="target">
+                            <view tag="5" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mqB-gw-CF4" customClass="HCERageBar" customModule="HCExperience" customModuleProvider="target">
                                 <rect key="frame" x="71" y="8" width="509" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="upp-YJ-cvB"/>
@@ -497,7 +497,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Dzz-O8-ald">
                                 <rect key="frame" x="0.0" y="718" width="375" height="129"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="downloadicon" translatesAutoresizingMaskIntoConstraints="NO" id="SfB-fD-9Wr">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="downloadicon" translatesAutoresizingMaskIntoConstraints="NO" id="SfB-fD-9Wr">
                                         <rect key="frame" x="0.0" y="0.0" width="129" height="129"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="1rD-LZ-MXM"/>
@@ -516,10 +516,10 @@
                                             </mask>
                                         </variation>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0 / 10 downloaded" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2n-0m-HZg">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0 / 10 downloaded" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2n-0m-HZg">
                                         <rect key="frame" x="149" y="52" width="226" height="26"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="22"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -565,11 +565,221 @@
                         <outlet property="downloadLabel" destination="w2n-0m-HZg" id="ggz-h5-EQS"/>
                         <outlet property="rageView" destination="mqB-gw-CF4" id="YLL-aU-EiW"/>
                         <outlet property="wifiImageView" destination="PbV-kK-NHF" id="e6l-uH-98F"/>
+                        <segue destination="gge-So-Trh" kind="presentation" identifier="win" modalTransitionStyle="crossDissolve" id="NPp-O6-S2Z"/>
+                        <segue destination="16B-Ve-HNi" kind="presentation" identifier="gameOver" modalTransitionStyle="crossDissolve" id="JgE-dg-y43"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gYp-i7-WTW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1659" y="999"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vU6-qn-bPD">
+            <objects>
+                <viewController id="gge-So-Trh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fGG-ag-5h0"/>
+                        <viewControllerLayoutGuide type="bottom" id="GGn-Yz-K14"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cks-dv-ddu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Successfully downloaded file" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTK-Fn-6Pw">
+                                <rect key="frame" x="149" y="52" width="226" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="Gl1-lE-Zxz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="38"/>
+                                <color key="textColor" red="0.23921568627450981" green="0.52156862745098043" blue="0.050980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Gl1-lE-Zxz"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Gl1-lE-Zxz"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyE-RU-Nth">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="WsG-J8-T04"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="19"/>
+                                <state key="normal" title="Select files">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="WsG-J8-T04"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="WsG-J8-T04"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="E7x-fR-bTF" kind="presentation" modalTransitionStyle="crossDissolve" id="Pmp-Xk-jM1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HyE-RU-Nth" firstAttribute="centerX" secondItem="cks-dv-ddu" secondAttribute="centerX" id="YOR-GB-9Zf"/>
+                            <constraint firstItem="UTK-Fn-6Pw" firstAttribute="centerX" secondItem="HyE-RU-Nth" secondAttribute="centerX" id="avJ-wY-e2y"/>
+                            <constraint firstAttribute="bottom" secondItem="HyE-RU-Nth" secondAttribute="bottom" constant="20" symbolic="YES" id="bZG-Pl-lIt"/>
+                            <constraint firstItem="UTK-Fn-6Pw" firstAttribute="leading" secondItem="cks-dv-ddu" secondAttribute="leading" id="i02-iq-21v"/>
+                            <constraint firstItem="UTK-Fn-6Pw" firstAttribute="top" secondItem="fGG-ag-5h0" secondAttribute="bottom" constant="109" id="q76-TB-Z9h"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="UTK-Fn-6Pw"/>
+                                <exclude reference="HyE-RU-Nth"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="YOR-GB-9Zf"/>
+                                <exclude reference="bZG-Pl-lIt"/>
+                                <exclude reference="avJ-wY-e2y"/>
+                                <exclude reference="i02-iq-21v"/>
+                                <exclude reference="q76-TB-Z9h"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="UTK-Fn-6Pw"/>
+                                <include reference="HyE-RU-Nth"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="YOR-GB-9Zf"/>
+                                <include reference="bZG-Pl-lIt"/>
+                                <include reference="avJ-wY-e2y"/>
+                                <include reference="i02-iq-21v"/>
+                                <include reference="q76-TB-Z9h"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fGo-vN-QxG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2455.5" y="1299"/>
+        </scene>
+        <!--Game Over View Controller-->
+        <scene sceneID="vXT-ad-Jz9">
+            <objects>
+                <viewController id="16B-Ve-HNi" customClass="HCEGameOverViewController" customModule="HCExperience" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s9U-vv-qUn"/>
+                        <viewControllerLayoutGuide type="bottom" id="L5K-E1-lrN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mU8-Uu-Nqh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Over" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKa-oS-Dga">
+                                <rect key="frame" x="149" y="52" width="226" height="26"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="38"/>
+                                <color key="textColor" red="0.88567571990000005" green="0.0" blue="0.1174631147" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPT-Dd-m7r">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="137" id="Vb5-yI-Wie"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="19"/>
+                                <state key="normal" title="Try Again">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Vb5-yI-Wie"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Vb5-yI-Wie"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="KFK-gC-IEz" kind="presentation" identifier="again" modalTransitionStyle="crossDissolve" id="cbF-gn-nS9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLT-Uj-fpE">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="vCg-rb-Jpp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="19"/>
+                                <state key="normal" title="Select files">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="vCg-rb-Jpp"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="vCg-rb-Jpp"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="E7x-fR-bTF" kind="presentation" modalTransitionStyle="crossDissolve" id="gSQ-0s-5Wa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vLT-Uj-fpE" firstAttribute="leading" secondItem="mU8-Uu-Nqh" secondAttribute="leadingMargin" id="00v-Xb-6Xj"/>
+                            <constraint firstItem="L5K-E1-lrN" firstAttribute="top" secondItem="vLT-Uj-fpE" secondAttribute="bottom" constant="20" id="AZc-aa-csL"/>
+                            <constraint firstItem="NKa-oS-Dga" firstAttribute="top" secondItem="s9U-vv-qUn" secondAttribute="bottom" constant="113" id="UZt-e8-eUg"/>
+                            <constraint firstItem="NKa-oS-Dga" firstAttribute="leading" secondItem="mU8-Uu-Nqh" secondAttribute="leadingMargin" constant="47" id="gfH-jD-aAE"/>
+                            <constraint firstItem="L5K-E1-lrN" firstAttribute="top" secondItem="VPT-Dd-m7r" secondAttribute="bottom" constant="20" id="ryD-bS-amc"/>
+                            <constraint firstItem="NKa-oS-Dga" firstAttribute="centerX" secondItem="mU8-Uu-Nqh" secondAttribute="centerX" id="v0c-1S-cqS"/>
+                            <constraint firstItem="VPT-Dd-m7r" firstAttribute="trailing" secondItem="mU8-Uu-Nqh" secondAttribute="trailingMargin" id="ygL-SH-b3d"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="NKa-oS-Dga"/>
+                                <exclude reference="VPT-Dd-m7r"/>
+                                <exclude reference="vLT-Uj-fpE"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="AZc-aa-csL"/>
+                                <exclude reference="ryD-bS-amc"/>
+                                <exclude reference="ygL-SH-b3d"/>
+                                <exclude reference="00v-Xb-6Xj"/>
+                                <exclude reference="UZt-e8-eUg"/>
+                                <exclude reference="gfH-jD-aAE"/>
+                                <exclude reference="v0c-1S-cqS"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="NKa-oS-Dga"/>
+                                <include reference="VPT-Dd-m7r"/>
+                                <include reference="vLT-Uj-fpE"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="AZc-aa-csL"/>
+                                <include reference="ryD-bS-amc"/>
+                                <include reference="ygL-SH-b3d"/>
+                                <include reference="00v-Xb-6Xj"/>
+                                <include reference="UZt-e8-eUg"/>
+                                <include reference="gfH-jD-aAE"/>
+                                <include reference="v0c-1S-cqS"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pk3-gm-ocd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2455.5" y="608.25"/>
         </scene>
     </scenes>
     <resources>
@@ -583,4 +793,8 @@
         <image name="safari" width="540" height="43"/>
         <image name="wifi_0" width="300" height="300"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="gSQ-0s-5Wa"/>
+        <segue reference="cbF-gn-nS9"/>
+    </inferredMetricsTieBreakers>
 </document>

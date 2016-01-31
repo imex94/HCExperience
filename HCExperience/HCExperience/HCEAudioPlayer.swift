@@ -19,6 +19,8 @@ class HCEAudioPlayer: NSObject {
     private var audioPlayer: AVAudioPlayer!
     private var filename = ""
     
+    static var isPlaying = false
+    
     init(filename: String) {
         self.state = .Stopped
         self.filename = filename

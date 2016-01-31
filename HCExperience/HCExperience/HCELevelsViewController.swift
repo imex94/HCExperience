@@ -13,7 +13,7 @@ class HCELevelsViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet var tableView: UITableView!
     @IBOutlet var viewRules: UIView!
     
-    let game = HCEGame.sharedGame
+    private let game = HCEGame.sharedGame
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,6 @@ class HCELevelsViewController: UIViewController, UITableViewDelegate, UITableVie
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -80,6 +79,7 @@ class HCELevelsViewController: UIViewController, UITableViewDelegate, UITableVie
         // Pass the selected object to the new view controller.
         let gameViewController = segue.destinationViewController as! HCEGameViewController
         let level = HCELevel(elements: (sender as! UIButton).tag + 1)
+        level.levelNumber = (sender as! UIButton).tag
         gameViewController.level = level
     }
 }

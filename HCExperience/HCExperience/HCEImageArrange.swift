@@ -19,7 +19,7 @@ class HCEImageArranger {
             
         while (rectangles.count != count) {
             randomX = CGFloat(arc4random_uniform(UInt32(UIScreen.mainScreen().bounds.width - 150)))
-            randomY = CGFloat(arc4random_uniform(UInt32(UIScreen.mainScreen().bounds.height - 150)))
+            randomY = CGFloat(arc4random_uniform(UInt32(UIScreen.mainScreen().bounds.height - 200)))
             newRectangle = CGRect(x: randomX, y: randomY, width: 100, height: 100)
             
             if (rectangles.count == 0) {
