@@ -12,6 +12,7 @@
 		21B7A7281C5D5B5E00A88680 /* HCEImageArrange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B7A7271C5D5B5E00A88680 /* HCEImageArrange.swift */; };
 		21B7A72D1C5D896100A88680 /* HCETemplates.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21B7A72B1C5D896100A88680 /* HCETemplates.xib */; };
 		2B121D371C5DDCF700F44E4F /* HCEElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B121D361C5DDCF700F44E4F /* HCEElement.swift */; };
+		2B121D391C5DEAD800F44E4F /* HCELoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B121D381C5DEAD800F44E4F /* HCELoadingView.swift */; };
 		2BD738F11C5D3B880092F507 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD738F01C5D3B880092F507 /* AppDelegate.swift */; };
 		2BD738F61C5D3B880092F507 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BD738F41C5D3B880092F507 /* Main.storyboard */; };
 		2BD738F81C5D3B880092F507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD738F71C5D3B880092F507 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		21B7A7271C5D5B5E00A88680 /* HCEImageArrange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCEImageArrange.swift; sourceTree = "<group>"; };
 		21B7A72C1C5D896100A88680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HCETemplates.xib; sourceTree = "<group>"; };
 		2B121D361C5DDCF700F44E4F /* HCEElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCEElement.swift; sourceTree = "<group>"; };
+		2B121D381C5DEAD800F44E4F /* HCELoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCELoadingView.swift; sourceTree = "<group>"; };
 		2BD738ED1C5D3B880092F507 /* HCExperience.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCExperience.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD738F01C5D3B880092F507 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BD738F51C5D3B880092F507 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			children = (
 				21B7A7271C5D5B5E00A88680 /* HCEImageArrange.swift */,
 				2BD7391A1C5D70420092F507 /* HCERageBar.swift */,
+				2B121D381C5DEAD800F44E4F /* HCELoadingView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				2BD7391B1C5D70420092F507 /* HCERageBar.swift in Sources */,
 				2BD739151C5D3BA60092F507 /* HCEGame.swift in Sources */,
 				1164FD421C5DA5BD00822784 /* HCEFirstViewController.swift in Sources */,
+				2B121D391C5DEAD800F44E4F /* HCELoadingView.swift in Sources */,
 				2BD7391D1C5DB31E0092F507 /* HCEAudioPlayer.swift in Sources */,
 				2BD739131C5D3BA60092F507 /* HCELevel.swift in Sources */,
 				2BD739191C5D6E890092F507 /* HCEGameViewController.swift in Sources */,

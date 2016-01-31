@@ -48,6 +48,14 @@ extension UIImageView {
         self.startAnimating()
         return self
     }
+    
+    func animatedImageFrom(images: [UIImage], withDuration duration: Double, repeatition: Int) -> UIImageView {
+        self.animationImages = images
+        self.animationDuration = duration
+        self.animationRepeatCount = repeatition
+        self.startAnimating()
+        return self
+    }
 }
 
 extension Int {

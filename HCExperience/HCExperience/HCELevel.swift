@@ -12,9 +12,11 @@ class HCELevel: NSObject {
     
     var rage: Double
     var elements: Int
+    var currentDownloads: Int
     
     init(elements: Int) {
         self.rage = 0.0
+        self.currentDownloads = 0
         self.elements = elements
         super.init()
     }
