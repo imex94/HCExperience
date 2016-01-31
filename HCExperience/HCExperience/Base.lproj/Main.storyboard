@@ -494,11 +494,11 @@
                                     <constraint firstAttribute="height" constant="43" id="guo-7k-YqG"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Dzz-O8-ald">
-                                <rect key="frame" x="0.0" y="718" width="350" height="90"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Dzz-O8-ald">
+                                <rect key="frame" x="0.0" y="718" width="375" height="129"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downloadicon" translatesAutoresizingMaskIntoConstraints="NO" id="SfB-fD-9Wr">
-                                        <rect key="frame" x="20" y="20" width="50" height="50"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="downloadicon" translatesAutoresizingMaskIntoConstraints="NO" id="SfB-fD-9Wr">
+                                        <rect key="frame" x="0.0" y="0.0" width="129" height="129"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="1rD-LZ-MXM"/>
                                             <constraint firstAttribute="width" constant="50" id="yv7-G7-Fvb"/>
@@ -516,8 +516,8 @@
                                             </mask>
                                         </variation>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 / 10 downloaded" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2n-0m-HZg">
-                                        <rect key="frame" x="90" y="27" width="240" height="35"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0 / 10 downloaded" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2n-0m-HZg">
+                                        <rect key="frame" x="149" y="52" width="226" height="26"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="22"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -550,14 +550,14 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="zAV-Iz-7Uc"/>
                                 <exclude reference="tPX-QB-V1Y"/>
+                                <exclude reference="zAV-Iz-7Uc"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="constraints">
-                                <include reference="zAV-Iz-7Uc"/>
                                 <include reference="tPX-QB-V1Y"/>
+                                <include reference="zAV-Iz-7Uc"/>
                             </mask>
                         </variation>
                     </view>

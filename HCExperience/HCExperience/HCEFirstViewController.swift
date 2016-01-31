@@ -86,6 +86,8 @@ class HCEFirstViewController: UIViewController {
         case HCEAudioPlayerState.Playing:
             audioPlayer.stopAudio()
             sender.setImage(UIImage(named: "music_mute"), forState: .Normal)
+        default:
+            break
         }
     }
 
