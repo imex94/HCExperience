@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		21B7A7281C5D5B5E00A88680 /* HCEImageArrange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B7A7271C5D5B5E00A88680 /* HCEImageArrange.swift */; };
-		21B7A72A1C5D77BD00A88680 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B7A7291C5D77BD00A88680 /* TestViewController.swift */; };
 		2BD738F11C5D3B880092F507 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD738F01C5D3B880092F507 /* AppDelegate.swift */; };
 		2BD738F31C5D3B880092F507 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD738F21C5D3B880092F507 /* ViewController.swift */; };
 		2BD738F61C5D3B880092F507 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BD738F41C5D3B880092F507 /* Main.storyboard */; };
@@ -32,7 +31,6 @@
 
 /* Begin PBXFileReference section */
 		21B7A7271C5D5B5E00A88680 /* HCEImageArrange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCEImageArrange.swift; sourceTree = "<group>"; };
-		21B7A7291C5D77BD00A88680 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		2BD738ED1C5D3B880092F507 /* HCExperience.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCExperience.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD738F01C5D3B880092F507 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BD738F21C5D3B880092F507 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,7 +92,6 @@
 				2BD738F01C5D3B880092F507 /* AppDelegate.swift */,
 				2BD738F21C5D3B880092F507 /* ViewController.swift */,
 				2BD738F41C5D3B880092F507 /* Main.storyboard */,
-				21B7A7291C5D77BD00A88680 /* TestViewController.swift */,
 				2BD738F71C5D3B880092F507 /* Assets.xcassets */,
 				2BD738F91C5D3B880092F507 /* LaunchScreen.storyboard */,
 				2BD738FC1C5D3B880092F507 /* Info.plist */,
@@ -211,7 +208,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21B7A72A1C5D77BD00A88680 /* TestViewController.swift in Sources */,
 				2BD738F31C5D3B880092F507 /* ViewController.swift in Sources */,
 				2BD739151C5D3BA60092F507 /* HCEGame.swift in Sources */,
 				2BD739131C5D3BA60092F507 /* HCELevel.swift in Sources */,
