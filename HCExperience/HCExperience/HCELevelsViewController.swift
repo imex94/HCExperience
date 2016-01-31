@@ -41,14 +41,14 @@ class HCELevelsViewController: UIViewController, UITableViewDelegate, UITableVie
         
         cell.textLabel?.text = "File \(indexPath.row + 1)"
         
-        let button = cell.viewWithTag(1989) as! UIButton
-        button.tag = (indexPath.row + 1)
-        button.addTarget(self, action: "startLevel:", forControlEvents: .TouchUpInside)
+        let button = cell.viewWithTag(1989) as? UIButton
+        button?.tag = (indexPath.row + 1)
+        button?.addTarget(self, action: "startLevel:", forControlEvents: .TouchUpInside)
         if (game.currentLevel - 1) < indexPath.row {
-            button.setImage(UIImage(named: "padlockicon"), forState: .Normal)
-            button.enabled = false
+            button?.setImage(UIImage(named: "padlockicon"), forState: .Normal)
+            button?.enabled = false
         }
-        cell.contentView.bringSubviewToFront(button)
+        if button != nil { cell.contentView.bringSubviewToFront(button!) }
 
         return cell
     }
