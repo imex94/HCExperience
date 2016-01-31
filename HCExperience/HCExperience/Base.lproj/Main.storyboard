@@ -38,6 +38,12 @@
                                             <constraint firstAttribute="height" constant="81" id="dhp-oM-5Ox"/>
                                         </constraints>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Smm-iq-1Vf">
+                                        <rect key="frame" x="92" y="76" width="417" height="175"/>
+                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -68,6 +74,7 @@
                     <connections>
                         <outlet property="colorView" destination="hGL-ly-Xp0" id="Tag-4T-dwJ"/>
                         <outlet property="joeImageView" destination="o1X-rb-Nmo" id="AOo-HC-D9E"/>
+                        <outlet property="myTypeWriter" destination="Smm-iq-1Vf" id="82P-RA-Obf"/>
                         <outlet property="wifiImageView" destination="SYa-xK-496" id="WLo-dG-PCF"/>
                     </connections>
                 </viewController>
@@ -87,7 +94,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="pCS-Zz-7po">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="pCS-Zz-7po">
                                 <rect key="frame" x="180" y="20" width="240" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="pCS-Zz-7po" secondAttribute="height" multiplier="6:5" id="KUN-4v-jQz"/>
@@ -125,7 +132,7 @@
                                     <rect key="frame" x="87" y="178" width="225" height="171.5"/>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flyingwifi" translatesAutoresizingMaskIntoConstraints="NO" id="5cZ-5d-mV0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="flyingwifi" translatesAutoresizingMaskIntoConstraints="NO" id="5cZ-5d-mV0">
                                 <rect key="frame" x="431" y="296" width="149" height="142"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="149" id="DQw-CS-6JH">
@@ -178,7 +185,7 @@
                                     <rect key="frame" x="97" y="178" width="205" height="171.5"/>
                                 </variation>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fax-gZ-G01">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fax-gZ-G01">
                                 <rect key="frame" x="239.5" y="259" width="120" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.61435598544973546" blue="0.18707639354491548" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -205,7 +212,7 @@
                                     <rect key="frame" x="140" y="273" width="120" height="30"/>
                                 </variation>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="joe_3" translatesAutoresizingMaskIntoConstraints="NO" id="dbk-83-4IX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="joe_3" translatesAutoresizingMaskIntoConstraints="NO" id="dbk-83-4IX">
                                 <rect key="frame" x="81.5" y="321.5" width="355" height="270"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="dbk-83-4IX" secondAttribute="height" multiplier="71:54" id="PhF-Ck-UfW"/>
@@ -268,10 +275,10 @@
                                 <exclude reference="5LC-Tv-P78"/>
                                 <exclude reference="dMx-Ke-DtX"/>
                                 <exclude reference="ka2-Ui-ALB"/>
-                                <exclude reference="SLh-Vf-a3V"/>
-                                <exclude reference="XLt-LK-ac2"/>
                                 <exclude reference="Qwy-pX-9bc"/>
                                 <exclude reference="btP-yJ-ITE"/>
+                                <exclude reference="SLh-Vf-a3V"/>
+                                <exclude reference="XLt-LK-ac2"/>
                                 <exclude reference="CvK-07-2EX"/>
                                 <exclude reference="W5s-2e-WV6"/>
                                 <exclude reference="p1H-co-BsG"/>
@@ -288,10 +295,10 @@
                                 <include reference="5LC-Tv-P78"/>
                                 <include reference="dMx-Ke-DtX"/>
                                 <include reference="ka2-Ui-ALB"/>
-                                <include reference="SLh-Vf-a3V"/>
-                                <include reference="XLt-LK-ac2"/>
                                 <include reference="Qwy-pX-9bc"/>
                                 <include reference="btP-yJ-ITE"/>
+                                <include reference="SLh-Vf-a3V"/>
+                                <include reference="XLt-LK-ac2"/>
                                 <include reference="CvK-07-2EX"/>
                                 <include reference="W5s-2e-WV6"/>
                                 <include reference="p1H-co-BsG"/>
