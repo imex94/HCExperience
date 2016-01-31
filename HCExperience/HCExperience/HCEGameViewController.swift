@@ -45,6 +45,7 @@ class HCEGameViewController: UIViewController {
             
             let button = HCEElement(frame: rects[i])
             button.tag = i
+            button.addTarget(self, action: "elementTapped:", forControlEvents: .TouchUpInside)
             if i == 0 {
                 button.setType(Int(arc4random_uniform(3)))
             } else {
@@ -63,6 +64,21 @@ class HCEGameViewController: UIViewController {
             currentRageView.fillColor = UIColor.getRageBarColor(Float(level.rage))
             currentRageView.updateProgress(CGFloat(level.rage))
         }
+    }
+    
+    func elementTapped(sender: HCEElement) {
+        switch sender.type! {
+        case .Good: level.rage -= 10
+        case .Bad: level.rage += 10
+        case .Spam: level.rage += 5
+        }
+        
+        if (level.rage <= 0) {
+            level.rage = 0
+        }
+        
+        currentRageView.fillColor = UIColor.getRageBarColor(Float(level.rage))
+        currentRageView.updateProgress(CGFloat(level.rage))
     }
 
     override func didReceiveMemoryWarning() {
