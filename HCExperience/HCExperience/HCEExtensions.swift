@@ -33,6 +33,11 @@ extension UIColor {
         
         return UIColor (red: CGFloat (r), green: CGFloat (g), blue: 0.0, alpha: 1)
     }
+    
+    /** Get a color based on the integer RGB values */
+    class func colorWithRGB(r: Int, g: Int, b: Int) -> UIColor {
+        return UIColor(red: CGFloat(Double(r)/255.0), green: CGFloat(Double(g)/255.0), blue: CGFloat(Double(b)/255.0), alpha: 1)
+    }
 }
 
 extension UIImageView {

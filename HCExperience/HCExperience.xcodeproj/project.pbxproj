@@ -16,6 +16,8 @@
 		2BD739131C5D3BA60092F507 /* HCELevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD739101C5D3BA60092F507 /* HCELevel.swift */; };
 		2BD739141C5D3BA60092F507 /* HCEExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD739111C5D3BA60092F507 /* HCEExtensions.swift */; };
 		2BD739151C5D3BA60092F507 /* HCEGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD739121C5D3BA60092F507 /* HCEGame.swift */; };
+		2BD739191C5D6E890092F507 /* HCEGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD739181C5D6E890092F507 /* HCEGameViewController.swift */; };
+		2BD7391B1C5D70420092F507 /* HCERageBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD7391A1C5D70420092F507 /* HCERageBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		2BD739101C5D3BA60092F507 /* HCELevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCELevel.swift; sourceTree = "<group>"; };
 		2BD739111C5D3BA60092F507 /* HCEExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCEExtensions.swift; sourceTree = "<group>"; };
 		2BD739121C5D3BA60092F507 /* HCEGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCEGame.swift; sourceTree = "<group>"; };
+		2BD739181C5D6E890092F507 /* HCEGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCEGameViewController.swift; sourceTree = "<group>"; };
+		2BD7391A1C5D70420092F507 /* HCERageBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCERageBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +90,10 @@
 				2BD739101C5D3BA60092F507 /* HCELevel.swift */,
 				2BD739121C5D3BA60092F507 /* HCEGame.swift */,
 				2BD739111C5D3BA60092F507 /* HCEExtensions.swift */,
+				2BD7391A1C5D70420092F507 /* HCERageBar.swift */,
 				2BD738F01C5D3B880092F507 /* AppDelegate.swift */,
 				2BD738F21C5D3B880092F507 /* ViewController.swift */,
+				2BD739181C5D6E890092F507 /* HCEGameViewController.swift */,
 				2BD738F41C5D3B880092F507 /* Main.storyboard */,
 				2BD738F71C5D3B880092F507 /* Assets.xcassets */,
 				2BD738F91C5D3B880092F507 /* LaunchScreen.storyboard */,
@@ -206,8 +212,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BD738F31C5D3B880092F507 /* ViewController.swift in Sources */,
+				2BD7391B1C5D70420092F507 /* HCERageBar.swift in Sources */,
 				2BD739151C5D3BA60092F507 /* HCEGame.swift in Sources */,
 				2BD739131C5D3BA60092F507 /* HCELevel.swift in Sources */,
+				2BD739191C5D6E890092F507 /* HCEGameViewController.swift in Sources */,
 				2BD738F11C5D3B880092F507 /* AppDelegate.swift in Sources */,
 				2BD739141C5D3BA60092F507 /* HCEExtensions.swift in Sources */,
 			);

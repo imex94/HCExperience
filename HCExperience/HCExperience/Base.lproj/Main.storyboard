@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KFK-gC-IEz">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -73,6 +73,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="314" y="342"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="d6q-TG-WFy">
+            <objects>
+                <viewController id="KFK-gC-IEz" customClass="HCEGameViewController" customModule="HCExperience" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6wG-SV-gln"/>
+                        <viewControllerLayoutGuide type="bottom" id="9aw-ib-yUb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gT8-d1-w4d">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mqB-gw-CF4" customClass="HCERageBar" customModule="HCExperience" customModuleProvider="target">
+                                <rect key="frame" x="71" y="8" width="509" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="upp-YJ-cvB"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifi_0" translatesAutoresizingMaskIntoConstraints="NO" id="PbV-kK-NHF">
+                                <rect key="frame" x="10" y="20" width="43" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43" id="Pft-eG-Xoy"/>
+                                    <constraint firstAttribute="height" constant="43" id="guo-7k-YqG"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mqB-gw-CF4" firstAttribute="trailing" secondItem="gT8-d1-w4d" secondAttribute="trailingMargin" id="CCo-IX-LgK"/>
+                            <constraint firstItem="mqB-gw-CF4" firstAttribute="top" secondItem="6wG-SV-gln" secondAttribute="bottom" constant="-12" id="DTy-Ra-pbC"/>
+                            <constraint firstItem="mqB-gw-CF4" firstAttribute="leading" secondItem="PbV-kK-NHF" secondAttribute="trailing" constant="18" id="M0g-ag-L8b"/>
+                            <constraint firstItem="PbV-kK-NHF" firstAttribute="top" secondItem="6wG-SV-gln" secondAttribute="bottom" id="hE5-Hy-aai"/>
+                            <constraint firstItem="PbV-kK-NHF" firstAttribute="leading" secondItem="gT8-d1-w4d" secondAttribute="leadingMargin" constant="-10" id="tHg-Re-WXE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="rageView" destination="mqB-gw-CF4" id="YLL-aU-EiW"/>
+                        <outlet property="wifiImageView" destination="PbV-kK-NHF" id="e6l-uH-98F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gYp-i7-WTW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="965" y="342"/>
         </scene>
     </scenes>
     <resources>
