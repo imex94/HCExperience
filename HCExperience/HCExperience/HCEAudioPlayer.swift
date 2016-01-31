@@ -47,4 +47,8 @@ class HCEAudioPlayer: NSObject {
     func getState() -> HCEAudioPlayerState {
         return state
     }
+    
+    func setFile(filename: String) {
+        self.filename = filename;
+    }
 }

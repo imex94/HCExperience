@@ -35,7 +35,7 @@ class HCEFirstViewController: UIViewController {
         let images = [UIImage(named: "joe_3")!, UIImage(named: "joe_2")!, UIImage(named: "joe_1")!]
         joeImageView.animatedImageFrom(images, withDuration: 0.2)
         
-        // start music
+        // Load main theme music
         audioPlayer = HCEAudioPlayer(filename: "main2")
         audioPlayer.playAudio()
     }
@@ -48,11 +48,14 @@ class HCEFirstViewController: UIViewController {
     override func viewDidDisappear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        audioPlayer.stopAudio()
+        // Load game music
+        audioPlayer.setFile("game")
         
-        // start music
-        audioPlayer = HCEAudioPlayer(filename: "game")
-        audioPlayer.playAudio()
+        // Only start game music
+        // if the audio player was not muted
+        if (audioPlayer.getState() == .Playing) {
+            audioPlayer.playAudio()
+        }
     }
     
     override func prefersStatusBarHidden() -> Bool {
@@ -96,6 +99,8 @@ class HCEFirstViewController: UIViewController {
         case HCEAudioPlayerState.Playing:
             audioPlayer.stopAudio()
             sender.setImage(UIImage(named: "music_mute"), forState: .Normal)
+        default:
+            break
         }
     }
 
